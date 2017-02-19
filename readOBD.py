@@ -62,4 +62,4 @@ while 1:
         dataList["CONTROL_MODULE_VOLTAGE"] = str(control_module_voltage.value)
 
     dataJson = json.loads(json.dumps(dataList))
-    print(dataJson)
+    print(type(dataJson))
