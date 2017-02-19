@@ -27,35 +27,35 @@ intake_pressure = connection.query(obd.commands.INTAKE_PRESSURE)
 if not intake_pressure.is_null():
     dataList["INTAKE_PRESSURE"] = intake_pressure.value
 
-intake_temp = connection.query(obd.commands.intake_temp)
+intake_temp = connection.query(obd.commands.INTAKE_TEMP)
 if not intake_temp.is_null():
     dataList["INTAKE_TEMP"] = intake_temp.value
 
-rpm = connection.query(obd.commands.rpm)
+rpm = connection.query(obd.commands.RPM)
 if not rpm.is_null():
     dataList["RPM"] = rpm.value
 
-maf = connection.query(obd.commands.maf)
+maf = connection.query(obd.commands.MAF)
 if not maf.is_null():
     dataList["MAF"] = maf.value
 
-coolant_temp = connection.query(obd.commands.coolant_temp)
+coolant_temp = connection.query(obd.commands.COOLANT_TEMP)
 if not coolant_temp.is_null():
     dataList["COOLANT_TEMP"] = coolant_temp.value
 
-fuel_level = connection.query(obd.commands.fuel_level)
+fuel_level = connection.query(obd.commands.FUEL_LEVEL)
 if not fuel_level.is_null():
     dataList["FUEL_LEVEL"] = fuel_level.value
 
-ambiant_air_temp = connection.query(obd.commands.ambiant_air_temp)
+ambiant_air_temp = connection.query(obd.commands.AMBIANT_AIR_TEMP)
 if not ambiant_air_temp.is_null():
     dataList["AMBIANT_AIR_TEMP"] = ambiant_air_temp.value
 
-oil_temp = connection.query(obd.commands.oil_temp)
+oil_temp = connection.query(obd.commands.OIL_TEMP)
 if not oil_temp.is_null():
     dataList["OIL_TEMP"] = oil_temp.value
 
-control_module_voltage = connection.query(obd.commands.control_module_voltage)
+control_module_voltage = connection.query(obd.commands.CONTROL_MODULE_VOLTAGE)
 if not control_module_voltage.is_null():
     dataList["CONTROL_MODULE_VOLTAGE"] = control_module_voltage.value
 
