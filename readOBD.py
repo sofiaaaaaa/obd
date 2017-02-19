@@ -2,7 +2,7 @@ import obd
 from obd import OBDStatus
 
 # connecting ELM
-connection = obd.OBD()
+connection = obd.OBD('/dev/pts/1')
 
 """
 # Check connection status
