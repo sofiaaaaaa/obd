@@ -58,3 +58,6 @@ if not oil_temp.is_null():
 control_module_voltage = connection.query(obd.commands.control_module_voltage)
 if not control_module_voltage.is_null():
     dataList["CONTROL_MODULE_VOLTAGE"] = control_module_voltage.value
+
+
+print(dataList)
