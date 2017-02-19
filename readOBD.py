@@ -1,4 +1,5 @@
 import obd
+import json
 from obd import OBDStatus
 
 # connecting ELM
@@ -60,5 +61,5 @@ while 1:
     if not control_module_voltage.is_null():
         dataList["CONTROL_MODULE_VOLTAGE"] = str(control_module_voltage.value)
 
-
-    print(dataList)
+    dataJson = json.loads(json.dumps(dataList))
+    print(dataJson)
